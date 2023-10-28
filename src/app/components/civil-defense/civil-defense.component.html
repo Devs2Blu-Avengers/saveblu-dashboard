@@ -22,41 +22,41 @@
     <!-- Date Column -->
     <ng-container matColumnDef="date">
       <th mat-header-cell *matHeaderCellDef class="text-center"> Data </th>
-      <td mat-cell *matCellDef="let element" class="text-center"> {{element.date}} </td>
+      <td mat-cell *matCellDef="let element" class="text-center"> {{formatDate(element.date)}} </td>
     </ng-container>
 
-    <!-- Id Column -->
+    <!-- category Column -->
     <ng-container matColumnDef="category">
       <th mat-header-cell *matHeaderCellDef class="text-center"> Categoria </th>
       <td mat-cell *matCellDef="let element" class="text-center"> {{element.category}} </td>
     </ng-container>
 
-    <!-- User Column -->
+    <!-- description Column -->
     <ng-container matColumnDef="description">
       <th mat-header-cell *matHeaderCellDef class="text-center"> Descrição </th>
       <td mat-cell *matCellDef="let element" class="text-center" id="description"> {{element.description}} </td>
     </ng-container>
 
-    <!-- Date Column -->
+    <!-- urgent Column -->
     <ng-container matColumnDef="urgent">
       <th mat-header-cell *matHeaderCellDef class="text-center"> Urgência </th>
-      <td mat-cell *matCellDef="let element" class="text-center"> {{element.urgent}} </td>
+      <td mat-cell *matCellDef="let element" class="text-center"> {{isUrgent(element.urgent)}} </td>
     </ng-container>
 
-     <!-- Date Column -->
+     <!-- ticket Column -->
      <ng-container matColumnDef="ticket">
       <th mat-header-cell *matHeaderCellDef class="text-center"> Ticket </th>
       <td mat-cell *matCellDef="let element" class="text-center"> {{element.ticket}} </td>
     </ng-container>
 
     <!-- Action Column -->
-    <!-- <ng-container matColumnDef="action">
+    <ng-container matColumnDef="action">
       <th mat-header-cell *matHeaderCellDef class="text-center"> Ação </th>
       <td mat-cell *matCellDef="let element" class="text-center">
-        <button mat-flat-button color="primary" class="m-lg-2" (click)="updateEmployee(element)">Editar</button>
-        <button mat-flat-button color="warn" (click)="openDialog(element)">Excluir</button>
+        <button mat-flat-button color="primary" class="m-lg-2">Editar</button>
+        <button mat-flat-button color="warn">Excluir</button>
       </td>
-    </ng-container> -->
+    </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
