@@ -1,1 +1,64 @@
-<p>civil-defense works!</p>
+<h1 class="text-center fs-1 fw-bolder mt-4 text-dark-emphasis">Lista de Ocorrências</h1>
+
+<div>
+  <!-- tabela com as Ocorrências -->
+  <table mat-table [dataSource]="incidenceModelList" class="mat-elevation-z8 m-auto mt-5">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Id </th>
+      <td mat-cell *matCellDef="let element" class="text-center"> {{element.id}} </td>
+    </ng-container>
+
+    <!-- User Column -->
+    <ng-container matColumnDef="user">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Usuário </th>
+      <td mat-cell *matCellDef="let element" class="text-center"> {{element.user.name}} </td>
+    </ng-container>
+
+    <!-- Date Column -->
+    <ng-container matColumnDef="date">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Data </th>
+      <td mat-cell *matCellDef="let element" class="text-center"> {{element.date}} </td>
+    </ng-container>
+
+    <!-- Id Column -->
+    <ng-container matColumnDef="category">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Categoria </th>
+      <td mat-cell *matCellDef="let element" class="text-center"> {{element.category}} </td>
+    </ng-container>
+
+    <!-- User Column -->
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Descrição </th>
+      <td mat-cell *matCellDef="let element" class="text-center" id="description"> {{element.description}} </td>
+    </ng-container>
+
+    <!-- Date Column -->
+    <ng-container matColumnDef="urgent">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Urgência </th>
+      <td mat-cell *matCellDef="let element" class="text-center"> {{element.urgent}} </td>
+    </ng-container>
+
+     <!-- Date Column -->
+     <ng-container matColumnDef="ticket">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Ticket </th>
+      <td mat-cell *matCellDef="let element" class="text-center"> {{element.ticket}} </td>
+    </ng-container>
+
+    <!-- Action Column -->
+    <!-- <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef class="text-center"> Ação </th>
+      <td mat-cell *matCellDef="let element" class="text-center">
+        <button mat-flat-button color="primary" class="m-lg-2" (click)="updateEmployee(element)">Editar</button>
+        <button mat-flat-button color="warn" (click)="openDialog(element)">Excluir</button>
+      </td>
+    </ng-container> -->
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
