@@ -1,0 +1,48 @@
+<h1 mat-dialog-title class="text-dark-emphasis">Editar Ocorrência</h1>
+
+<div mat-dialog-content>
+         <!-- chamar  o formulário de Incidence -->
+  <form [formGroup]="formIncidence" class="row">
+      <!-- formControlName = algum atributo que foi construído para o formulário  -->
+      <input matInput type="id" [ngModel]="data.id" formControlName="id" id="id" [required]="true" hidden="true">
+
+      <mat-form-field class="col-sm-12">
+          <mat-label for="date">Data:</mat-label>
+          <input matInput type="text" formControlName="date" id="date" [ngModel]="formatDate(data.date)" [required]="true" [readonly]="true">
+      </mat-form-field>
+
+      <mat-form-field class="col-sm-12">
+        <mat-label for="category">Categoria:</mat-label>
+        <input matInput type="text" formControlName="category" id="category" [ngModel]="data.category" [required]="true" [readonly]="true">
+      </mat-form-field>
+
+      <mat-form-field class="col-sm-12">
+        <mat-label for="description">Descrição:</mat-label>
+        <input matInput type="text" formControlName="description" id="description" [ngModel]="data.description" [required]="true" [readonly]="true">
+      </mat-form-field>
+
+      <mat-form-field class="col-sm-12">
+        <mat-label for="user">Usuário:</mat-label>
+        <input matInput type="text" formControlName="user" id="user" [ngModel]="data.user.name" [required]="true" [readonly]="true">
+      </mat-form-field>
+
+      <mat-form-field class="col-sm-12">
+        <mat-label for="urgent">Urgência:</mat-label>
+        <mat-select formControlName="urgent" [required]="true" [ngModel]="data.urgent">
+            <mat-option [value]="true">Urgente</mat-option>
+            <mat-option [value]="false">Não Urgente</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="col-sm-12">
+      <mat-label for="ticket">Ticket:</mat-label>
+      <input matInput type="text" formControlName="ticket" id="usticketer" [ngModel]="data.ticket" [required]="true" [readonly]="true">
+    </mat-form-field>
+
+    <!-- Componente Button do Angular Material -->
+    <div class="col-sm-8">
+      <button mat-raised-button color="primary" class="m-lg-2" (click)="updateIncidence()">Atualizar</button>
+      <button mat-raised-button color="warn" (click)="closeDialog()">Cancelar</button>
+    </div>
+  </form>
+</div>
