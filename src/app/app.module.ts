@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { HeaderModule } from './components/header/header.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CivilDefenseComponent } from './components/civil-defense/civil-defense.component';
 
 @NgModule({
   declarations: [

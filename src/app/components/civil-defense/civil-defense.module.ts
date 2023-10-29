@@ -4,6 +4,8 @@ import { DesignImportsModule } from 'src/app/shared/design-imports/design-import
 import { CivilDefenseRoutingModule } from './civil-defense-routing.module';
 import { CivilDefenseComponent } from './civil-defense.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DeleteIncidenceDialogModule } from './delete-incidence-dialog/delete-incidence-dialog.module';
+import { UpdateIncidenceDialogModule } from './update-incidence-dialog/update-incidence-dialog.module';
 
 
 
@@ -15,7 +17,9 @@ import { HttpClientModule } from '@angular/common/http';
     CommonModule,
     DesignImportsModule,
     CivilDefenseRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    DeleteIncidenceDialogModule,
+    UpdateIncidenceDialogModule
   ]
 })
 export class CivilDefenseModule { }
