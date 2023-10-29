@@ -77,7 +77,7 @@ export class CivilDefenseComponent implements OnInit {
   }
 
   formatDate(date: string): string {
-    const dateParts = date.split('-'); // Divide a data em ano, mês e dia
+    const dateParts = date.split('-'); //  Divide a data em ano, mês e dia
     if (dateParts.length === 3) {
       const [year, month, day] = dateParts;
       return `${day}/${month}/${year}`;
