@@ -27,7 +27,7 @@ export class CivilDefenseComponent implements OnInit {
   }
 
   listIncidences(): void {
-    this.service.listIncidences().subscribe((data) => {
+    this.service.listIncidences([0,1,2,3,4,5,6,7,8,9,10]).subscribe((data) => {
       this.incidenceModelList = data;
     });
   }
