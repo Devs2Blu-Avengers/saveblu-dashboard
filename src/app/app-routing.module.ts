@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   // criar uma rota - Objeto de rota
   // 1 - zerar rotas
-  { path: '', pathMatch: 'full', redirectTo: 'civil-defense'},
+  { path: '', pathMatch: 'full', redirectTo: '/'},
    // 2 - criar a rota da Home
   // defino rota e defino componente
   {path: 'civil-defense',
