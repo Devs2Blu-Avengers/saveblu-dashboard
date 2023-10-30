@@ -24,7 +24,7 @@ export class IncidenceService{
    }
 
    updateIndence(incidence: IncidenceModel): void {
-    this.http.put(this.apiUrl, incidence).subscribe({
+    this.http.put(`${this.apiUrl}/update`, incidence).subscribe({
       next: (response) => {
         console.log('Ocorrência atualizada com sucesso:', response);
         // Atualiza a página de ocorrências

@@ -32,7 +32,11 @@ export class UpdateIncidenceDialogComponent implements OnInit {
   }
 
   updateIncidence(): void {
+    let incidence: IncidenceModel = this.data;
+    incidence.urgent = this.formIncidence.value.urgent;
 
+
+    this.service.updateIndence(incidence);
     this.closeDialog();
   }
 

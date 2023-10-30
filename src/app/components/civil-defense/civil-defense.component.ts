@@ -40,11 +40,15 @@ export class CivilDefenseComponent implements OnInit {
       data: {
         id: element.id,
         date: element.date,
+        latitude: element.latitude,
+        longitude: element.longitude,
         category: element.category,
         description: element.description,
         user: element.user,
         image: element.image,
         urgent: element.urgent,
+        status: element.status,
+        valid: element.valid,
         ticket: element.ticket
       },
     });
@@ -58,11 +62,15 @@ export class CivilDefenseComponent implements OnInit {
       data: {
         id: element.id,
         date: element.date,
+        latitude: element.latitude,
+        longitude: element.longitude,
         category: element.category,
         description: element.description,
         user: element.user,
         image: element.image,
         urgent: element.urgent,
+        status: element.status,
+        valid: element.valid,
         ticket: element.ticket
       },
     });
