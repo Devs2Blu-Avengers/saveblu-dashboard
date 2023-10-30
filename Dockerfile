@@ -25,6 +25,9 @@ FROM nginx:alpine
 # Copy the built app to the Nginx web directory
 COPY --from=build /usr/src/app/dist/saveblu-front /usr/share/nginx/html
 
+# Copy the Nginx configuration file
+COPY default.conf /etc/nginx/conf.d/
+
 # Expose port 80
 EXPOSE 80
 
