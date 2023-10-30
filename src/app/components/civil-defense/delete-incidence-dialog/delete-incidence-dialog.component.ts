@@ -17,7 +17,7 @@ export class DeleteIncidenceDialogComponent implements OnInit {
   }
 
   deleteIncidence(id: number): void {
-
+    this.service.deleteIncidence(id);
 
     this.closeDialog();
   }

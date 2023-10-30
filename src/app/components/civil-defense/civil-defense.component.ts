@@ -27,7 +27,7 @@ export class CivilDefenseComponent implements OnInit {
   }
 
   listIncidences(): void {
-    this.service.listIncidences().subscribe((data) => {
+    this.service.listIncidences([0,1,2,3,4,5,6,7,8,9,10]).subscribe((data) => {
       this.incidenceModelList = data;
     });
   }
@@ -40,11 +40,15 @@ export class CivilDefenseComponent implements OnInit {
       data: {
         id: element.id,
         date: element.date,
+        latitude: element.latitude,
+        longitude: element.longitude,
         category: element.category,
         description: element.description,
         user: element.user,
         image: element.image,
         urgent: element.urgent,
+        status: element.status,
+        valid: element.valid,
         ticket: element.ticket
       },
     });
@@ -58,11 +62,15 @@ export class CivilDefenseComponent implements OnInit {
       data: {
         id: element.id,
         date: element.date,
+        latitude: element.latitude,
+        longitude: element.longitude,
         category: element.category,
         description: element.description,
         user: element.user,
         image: element.image,
         urgent: element.urgent,
+        status: element.status,
+        valid: element.valid,
         ticket: element.ticket
       },
     });
