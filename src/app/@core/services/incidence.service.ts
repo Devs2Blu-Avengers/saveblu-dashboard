@@ -28,7 +28,7 @@ export class IncidenceService{
       next: (response) => {
         console.log('Ocorrência atualizada com sucesso:', response);
         // Atualiza a página de ocorrências
-        window.location.href = '/civil-defense'
+        window.location.href = '/'
       },
       error: (error) => {
         console.error('Erro ao atualizar Ocorrência:', error);
@@ -41,7 +41,7 @@ export class IncidenceService{
       next: (response) => {
         console.log('Ocorrência excluída com sucesso:', response);
         // Atualiza a página de ocorrências
-        window.location.href = '/civil-defense';
+        window.location.href = '/';
       },
       error: (error) => {
         console.error('Erro ao excluir a Ocorrência:', error);
