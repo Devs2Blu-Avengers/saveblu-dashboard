@@ -1,27 +1,54 @@
-# SavebluFront
+<h1 align="center"> SaveBlu DashBoard </h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+<p align="center">
+Dashboard da Defesa Civil para simular o uso da api por um orgão público.
+</p>
 
-## Development server
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<p align="center">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+</p>
 
-## Code scaffolding
+<br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<p align="center">
+   <img alt="foto-1" src="" 
+  width="80%">
+  <br>
+  <br>
+  <img alt="foto-2" src="" 
+  width="80%">
+  <br>
+  <br>
+  <img alt="foto-3" src="" 
+  width="80%">
+</p>
 
-## Build
+## 🚀 Tecnologias
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-## Running unit tests
+FrontEnd
+- Angular cli@13.2.6.
+- Node 14.20.
+- Angular Bootstrap.
+- Angular Material.
+- Deploy na AWS.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 💻 Projeto
 
-## Running end-to-end tests
+Para simular como seria o uso da api por um orgão público desenvolvemos uma DashBoard para a Defesa Civil onde a mesma poderia gerênciar as ocorrência, podendo editar o nível de 
+urgência e excluir quando estivesse resolvida.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Deploy
 
-## Further help
+http://52.23.70.87/civil-defense
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+Feito com ♥ by Equipe Avengers ---> +Devs2blu 2023
