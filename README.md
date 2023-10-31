@@ -42,7 +42,7 @@ FrontEnd
 
 ## 💻 Projeto
 
-Para simular como seria o uso da api por um orgão público desenvolvemos uma DashBoard para a Defesa Civil onde a mesma poderia gerênciar as ocorrência, podendo editar o nível de 
+Para simular como seria o uso da api por um orgão público desenvolvemos uma DashBoard para a Defesa Civil onde a mesma poderia gerênciar as ocorrências, podendo editar o nível de 
 urgência e excluir quando estivesse resolvida.
 
 ## Deploy
