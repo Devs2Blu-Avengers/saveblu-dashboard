@@ -17,15 +17,15 @@ Dashboard da Defesa Civil para simular o uso da api por um orgão público.
 <br>
 
 <p align="center">
-   <img alt="foto-1" src="" 
+   <img alt="foto-1" src="https://github.com/Devs2Blu-Avengers/saveblu-dashboard/blob/main/screenshots/foto-1.png" 
   width="80%">
   <br>
   <br>
-  <img alt="foto-2" src="" 
+  <img alt="foto-2" src="https://github.com/Devs2Blu-Avengers/saveblu-dashboard/blob/main/screenshots/foto-2.png" 
   width="80%">
   <br>
   <br>
-  <img alt="foto-3" src="" 
+  <img alt="foto-3" src="https://github.com/Devs2Blu-Avengers/saveblu-dashboard/blob/main/screenshots/foto-3.png" 
   width="80%">
 </p>
 
@@ -42,7 +42,7 @@ FrontEnd
 
 ## 💻 Projeto
 
-Para simular como seria o uso da api por um orgão público desenvolvemos uma DashBoard para a Defesa Civil onde a mesma poderia gerênciar as ocorrência, podendo editar o nível de 
+Para simular como seria o uso da api por um orgão público desenvolvemos uma DashBoard para a Defesa Civil onde a mesma poderia gerênciar as ocorrências, podendo editar o nível de 
 urgência e excluir quando estivesse resolvida.
 
 ## Deploy
