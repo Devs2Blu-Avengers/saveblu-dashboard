@@ -1,0 +1,28 @@
+<h1 mat-dialog-title class="text-dark-emphasis">Excluir Ocorrência?</h1>
+
+<div mat-dialog-content class="d-flex">
+  <ul>
+    <li>
+      Data: {{formatDate(data.date)}}
+    </li>
+    <li>
+      Categoria: {{data.category}}
+    </li>
+    <li>
+      Descrição: {{data.description}}
+    </li>
+    <li>
+      Usuário: {{data.user.name}}
+    </li>
+    <li>
+      Urgência: {{isUrgent(data.urgent)}}
+    </li>
+    <li>
+      Ticket: {{data.ticket}}
+    </li>
+    <li>
+      <button mat-raised-button color="warn" class="m-lg-2" (click)="deleteIncidence(data.id)">Excluir</button>
+      <button mat-raised-button color="primary" (click)="closeDialog()">Cancelar</button>
+    </li>
+  </ul>
+</div>
